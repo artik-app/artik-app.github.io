@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your ARTIK account</title>
+<meta name="description" content="How to delete your ARTIK account and data.">
+<meta property="og:title" content="Delete your ARTIK account">
+<meta property="og:description" content="How to delete your ARTIK account and data.">
+<meta property="og:image" content="icon.png">
+<meta name="theme-color" content="#0b0b10">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Language: saved choice, else the browser's (French or English).
+  (function () {
+    var l = null;
+    try { l = localStorage.getItem('artik.lang'); } catch (e) {}
+    if (!l) l = (navigator.language || 'en').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+    document.documentElement.lang = l;
+  })();
+  function setLang(l) {
+    document.documentElement.lang = l;
+    try { localStorage.setItem('artik.lang', l); } catch (e) {}
+    document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('on', b.dataset.l === l); });
+  }
+  document.addEventListener('DOMContentLoaded', function () { setLang(document.documentElement.lang); });
+</script>
+</head>
+<body>
+<div class="wrap"><header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">ARTIK</a>
+  <div class="lang" role="group" aria-label="Language"><button data-l="en" onclick="setLang('en')">EN</button><button data-l="fr" onclick="setLang('fr')">FR</button></div>
+</header></div>
+<main class="wrap doc">
+  <h1><span data-lang="en">Delete your ARTIK account</span><span data-lang="fr">Supprimer votre compte ARTIK</span></h1>
+  <h2><span data-lang="en">In the app</span><span data-lang="fr">Dans l’appli</span></h2>
+  <p><span data-lang="en">Open ARTIK → Profile → ☰ menu → Settings → Account → Delete account. Confirm with your password. Your account is deleted right away.</span><span data-lang="fr">Ouvrez ARTIK → Profil → menu ☰ → Paramètres → Compte → Supprimer le compte. Confirmez avec votre mot de passe. Le compte est supprimé immédiatement.</span></p>
+  <h2><span data-lang="en">Without the app</span><span data-lang="fr">Sans l’appli</span></h2>
+  <p><span data-lang="en">Email ashdes237@gmail.com from the email address of your account with the subject “Delete my ARTIK account”. We confirm and delete it within 30 days.</span><span data-lang="fr">Écrivez à ashdes237@gmail.com depuis l’adresse e-mail de votre compte avec l’objet « Supprimer mon compte ARTIK ». Nous confirmons et supprimons sous 30 jours.</span></p>
+  <h2><span data-lang="en">What is deleted</span><span data-lang="fr">Ce qui est supprimé</span></h2>
+  <p><span data-lang="en">Your profile, posts, comments, likes, follows, messages and wallet. Some records are kept for safety and the law (moderation history, reports, financial transaction records), without being linked to a profile. See the Privacy policy.</span><span data-lang="fr">Votre profil, publications, commentaires, j’aime, abonnements, messages et portefeuille. Certains enregistrements sont gardés pour la sécurité et la loi (historique de modération, signalements, transactions financières), sans lien avec un profil. Voir la politique de confidentialité.</span></p>
+</main>
+<footer><div class="wrap">
+  <nav><a href="privacy.html"><span data-lang="en">Privacy policy</span><span data-lang="fr">Confidentialité</span></a><a href="terms.html"><span data-lang="en">Terms of use</span><span data-lang="fr">Conditions d'utilisation</span></a>
+  <a href="delete-account.html"><span data-lang="en">Delete your account</span><span data-lang="fr">Supprimer votre compte</span></a><a href="mailto:ashdes237@gmail.com"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span></a></nav>
+  © 2026 ARTIK · <span data-lang="en">Founded by Ashu Desta</span><span data-lang="fr">Fondé par Ashu Desta</span>
+</div></footer></body></html>
