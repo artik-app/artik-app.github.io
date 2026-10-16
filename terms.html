@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — ARTIK</title>
+<meta name="description" content="The rules for using ARTIK.">
+<link rel="canonical" href="https://artikapp.com/terms.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARTIK">
+<meta property="og:url" content="https://artikapp.com/terms.html">
+<meta property="og:title" content="Terms of Use — ARTIK">
+<meta property="og:description" content="The rules for using ARTIK.">
+<meta property="og:image" content="https://artikapp.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terms of Use — ARTIK">
+<meta name="twitter:description" content="The rules for using ARTIK.">
+<meta name="twitter:image" content="https://artikapp.com/og-image.png">
+<meta name="theme-color" content="#0b0b10">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Language: saved choice, else the browser's (French or English).
+  (function () {
+    var l = null;
+    try { l = localStorage.getItem('artik.lang'); } catch (e) {}
+    if (!l) l = (navigator.language || 'en').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+    document.documentElement.lang = l;
+  })();
+  function setLang(l) {
+    document.documentElement.lang = l;
+    try { localStorage.setItem('artik.lang', l); } catch (e) {}
+    document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('on', b.dataset.l === l); });
+  }
+  document.addEventListener('DOMContentLoaded', function () { setLang(document.documentElement.lang); });
+</script>
+</head>
+<body>
+<div class="wrap"><header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">ARTIK</a>
+  <div class="lang" role="group" aria-label="Language"><button data-l="en" onclick="setLang('en')">EN</button><button data-l="fr" onclick="setLang('fr')">FR</button></div>
+</header></div>
+<main class="wrap doc">
+  <h1>Terms of Use</h1>
+  <div class="date">Last updated: 12 October 2026</div>
+  <h2>Agreement</h2><p>By creating an account or using ARTIK you agree to these terms and to the Privacy Policy. ARTIK is currently in a test (beta) phase; features may change and the service may be interrupted.</p>
+  <h2>Who can use ARTIK</h2><p>You must be at least 13 years old. You are responsible for your account and for keeping your password safe. One person, one personal account; do not impersonate others.</p>
+  <h2>Your content</h2><p>You keep ownership of what you post. By posting, you give ARTIK a non-exclusive, worldwide, royalty-free licence to host, show, and distribute your content inside the service so the app can work. Only post content you have the right to share, including music.</p>
+  <h2>Not allowed</h2><p>Spam or fake engagement; harassment, bullying or hate; violence or dangerous acts; nudity or sexual content; anything that endangers children; promoting suicide or self-harm; scams or fraud; copyright infringement; false information meant to cause harm; impersonation; trying to break, overload or bypass the security of ARTIK.</p>
+  <h2>Moderation</h2><p>Anyone can report content or accounts. ARTIK may remove content and warn, restrict, suspend or ban accounts that break these rules. A reason is always recorded. Some decisions, such as permanent bans, are reviewed by the founder.</p>
+  <h2>Coins and gifts</h2><p>Coins and gifts are virtual items for use inside ARTIK. Coin purchases and creator payouts are not yet available in this test version. When they launch, their prices and rules will be shown in the app before you pay.</p>
+  <h2>Ending your account</h2><p>You can delete your account at any time in Settings. We may suspend or close accounts that seriously or repeatedly break these terms.</p>
+  <h2>No warranty</h2><p>ARTIK is provided &quot;as is&quot;. To the extent allowed by law, we are not liable for indirect losses or for content posted by other users.</p>
+  <h2>Contact</h2><p>Questions about these terms: ashdes237@gmail.com.</p>
+</main>
+<footer><div class="wrap">
+  <nav><a href="partner.html"><span data-lang="en">Partner with ARTIK</span><span data-lang="fr">Devenir partenaire</span></a><a href="https://wa.me/237683541432">WhatsApp +237 683 541 432</a><a href="privacy.html"><span data-lang="en">Privacy policy</span><span data-lang="fr">Confidentialité</span></a><a href="terms.html"><span data-lang="en">Terms of use</span><span data-lang="fr">Conditions d'utilisation</span></a>
+  <a href="delete-account.html"><span data-lang="en">Delete your account</span><span data-lang="fr">Supprimer votre compte</span></a><a href="mailto:ashdes237@gmail.com"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span></a></nav>
+  © 2026 ARTIK · <span data-lang="en">Founded by Ashu Desta</span><span data-lang="fr">Fondé par Ashu Desta</span>
+</div></footer></body></html>

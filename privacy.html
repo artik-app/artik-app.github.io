@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ARTIK</title>
+<meta name="description" content="How ARTIK collects, uses and protects your data.">
+<link rel="canonical" href="https://artikapp.com/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARTIK">
+<meta property="og:url" content="https://artikapp.com/privacy.html">
+<meta property="og:title" content="Privacy Policy — ARTIK">
+<meta property="og:description" content="How ARTIK collects, uses and protects your data.">
+<meta property="og:image" content="https://artikapp.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy — ARTIK">
+<meta name="twitter:description" content="How ARTIK collects, uses and protects your data.">
+<meta name="twitter:image" content="https://artikapp.com/og-image.png">
+<meta name="theme-color" content="#0b0b10">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Language: saved choice, else the browser's (French or English).
+  (function () {
+    var l = null;
+    try { l = localStorage.getItem('artik.lang'); } catch (e) {}
+    if (!l) l = (navigator.language || 'en').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+    document.documentElement.lang = l;
+  })();
+  function setLang(l) {
+    document.documentElement.lang = l;
+    try { localStorage.setItem('artik.lang', l); } catch (e) {}
+    document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('on', b.dataset.l === l); });
+  }
+  document.addEventListener('DOMContentLoaded', function () { setLang(document.documentElement.lang); });
+</script>
+</head>
+<body>
+<div class="wrap"><header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">ARTIK</a>
+  <div class="lang" role="group" aria-label="Language"><button data-l="en" onclick="setLang('en')">EN</button><button data-l="fr" onclick="setLang('fr')">FR</button></div>
+</header></div>
+<main class="wrap doc">
+  <h1>Privacy Policy</h1>
+  <div class="date">Last updated: 12 October 2026</div>
+  <h2>Who we are</h2><p>ARTIK is a short-video and LIVE social app founded by Ashu Desta. This policy explains what we collect, why, and the choices you have. The app is currently in a test (beta) phase.</p>
+  <h2>What we collect</h2><p>• Account details: email address, username, display name, password (stored only in encrypted/hashed form by our authentication provider), country.
+• Profile and content: photo, bio, videos, photos, captions, comments, likes, follows, messages, reports you send.
+• Settings: privacy choices, notification preferences, language.
+• Technical data: sign-in times, IP address and device/app information recorded by our servers for security.
+• Camera and microphone: used only while you record. Recordings are uploaded only when you choose to post them.</p>
+  <h2>How we use it</h2><p>To run your account and show your content; to apply your privacy settings (for example private accounts and who can message you); to keep ARTIK safe (moderation, reports, preventing spam and abuse); to fix problems and improve the app. We do not sell your personal data.</p>
+  <h2>Who can see your information</h2><p>Public posts and your profile are visible to other ARTIK users, according to your privacy settings. Messages are visible only to you and the person you are talking to, except where needed to investigate a report. Authorised ARTIK staff can see only the information their role requires; their actions are recorded in an audit log.</p>
+  <h2>Service providers</h2><p>We use trusted providers to host the app: Supabase (database, authentication and file storage, hosted in the European Union) and Expo (app updates). They process data only to provide these services to us.</p>
+  <h2>How long we keep data</h2><p>We keep your data while your account exists. When you delete your account, your profile, posts, comments, likes, follows, messages and wallet are deleted. We keep limited records that are needed for safety and legal reasons, such as moderation history, reports and financial transaction records, without linking them to a profile.</p>
+  <h2>Your choices and rights</h2><p>You can edit your profile, change your privacy settings, block people, and delete your account at any time in Settings → Account → Delete account. You can contact us to ask what data we hold about you or to correct it.</p>
+  <h2>Children</h2><p>ARTIK is not for children under 13. If we learn that a child under 13 has an account, we will delete it.</p>
+  <h2>Security</h2><p>Access to data is controlled by strict server-side rules, connections are encrypted, and passwords are never stored in plain text. No system is perfectly secure, so please use a strong, unique password.</p>
+  <h2>Changes and contact</h2><p>We may update this policy; we will show the new date here. Questions: ashdes237@gmail.com.</p>
+</main>
+<footer><div class="wrap">
+  <nav><a href="partner.html"><span data-lang="en">Partner with ARTIK</span><span data-lang="fr">Devenir partenaire</span></a><a href="https://wa.me/237683541432">WhatsApp +237 683 541 432</a><a href="privacy.html"><span data-lang="en">Privacy policy</span><span data-lang="fr">Confidentialité</span></a><a href="terms.html"><span data-lang="en">Terms of use</span><span data-lang="fr">Conditions d'utilisation</span></a>
+  <a href="delete-account.html"><span data-lang="en">Delete your account</span><span data-lang="fr">Supprimer votre compte</span></a><a href="mailto:ashdes237@gmail.com"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span></a></nav>
+  © 2026 ARTIK · <span data-lang="en">Founded by Ashu Desta</span><span data-lang="fr">Fondé par Ashu Desta</span>
+</div></footer></body></html>
