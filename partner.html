@@ -92,9 +92,9 @@
       if (!d.phone.trim() && !d.email.trim()) return say(false, 'Please give a phone number or an email so we can answer.', 'Donnez un numéro ou un e-mail pour que nous puissions répondre.');
       var b = f.querySelector('button'); b.disabled = true;
       try {
-        var r = await fetch("https://tvpbehorlqvfetqnpavs.supabase.co" + '/rest/v1/rpc/partner_request_submit', {
+        var r = await fetch("https://wvtwzqxyvnxkkopdbdca.supabase.co" + '/rest/v1/rpc/partner_request_submit', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', apikey: "sb_publishable_dp3VFovt9D-8EeOalzKLqg_OVYSSuyL" },
+          headers: { 'Content-Type': 'application/json', apikey: "sb_publishable_nG5_3Y_5GzywrFjYcw-p9g_WOsLaPwK" },
           body: JSON.stringify({ p_kind: d.kind, p_name: d.name, p_company: d.company, p_country: d.country, p_phone: d.phone, p_email: d.email, p_message: d.message, p_website: d.website }),
         });
         var j = await r.json();

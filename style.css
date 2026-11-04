@@ -1,13 +1,13 @@
 :root {
-  --bg: #0b0b10;
-  --surface: #15151d;
-  --raised: #1f1f2a;
-  --border: #2a2a36;
+  --bg: #16202a;
+  --surface: #1d2834;
+  --raised: #243041;
+  --border: #3f4953;
   --text: #f4f1ea;
-  --muted: #a7a3b3;
-  --gold: #d4a645;
-  --gold-light: #f1d08a;
-  --on-gold: #1a1300;
+  --muted: #a7b0b7;
+  --gold: #dec08e;
+  --gold-light: #efdcb8;
+  --on-gold: #16202a;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
