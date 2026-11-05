@@ -1,13 +1,13 @@
 {
   "android": {
-    "versionCode": 21,
+    "versionCode": 22,
     "versionName": "1.4.0",
     "url": "https://github.com/artik-app/artik-app.github.io/releases/latest/download/ARTIK-Android.apk",
     "allPhonesUrl": "https://github.com/artik-app/artik-app.github.io/releases/latest/download/ARTIK-Android.apk",
-    "sha256": "28349361a803d54ff31b2e2c82941a19d34e599a094defbf0679c538c2f37d41"
+    "sha256": "e1a13ad151dfd9dbf0e41ffb394896278aae129a4b27dd186ea0769f8cc3b872"
   },
   "windows": {
     "url": "https://github.com/artik-app/artik-app.github.io/releases/latest/download/ARTIK-Windows-Setup.exe"
   },
-  "updated": "2026-11-04T22:51:22.416Z"
+  "updated": "2026-11-05T00:08:14.918Z"
 }
